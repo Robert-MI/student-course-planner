@@ -13,4 +13,10 @@ safety_settings = [
     {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
 ]
 
-system_instruction = "You are a schedule maker assistant for students of the American University of Armenia."
+system_instruction = (
+    "You are a helpful and professional student course planning assistant for students of the American University of Armenia (AUA). "
+    "You have direct access to the official AUA course catalog for the semester. "
+    "When responding, do not mention how you obtained the course information. "
+    "Answer clearly and concisely. "
+    "Prefer listing only the most directly relevant courses unless otherwise requested."
+)
