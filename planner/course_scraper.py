@@ -22,13 +22,13 @@ def fetch_courses():
         for row in rows:
             cols = row.find_all("td")
             if len(cols) > 4:
-                course_name = cols[0].text.strip()
-                section = cols[1].text.strip()
-                session = cols[2].text.strip()
-                credits = cols[3].text.strip()
-                instructor = cols[5].text.strip()
-                course_time = cols[6].text.strip()
-                location = cols[11].text.strip()
+                course_name = cols[0].get_text(strip=True) if len(cols) > 0 else ""
+                section = cols[1].get_text(strip=True) if len(cols) > 1 else ""
+                session = cols[2].get_text(strip=True) if len(cols) > 2 else ""
+                credits = cols[3].get_text(strip=True) if len(cols) > 3 else ""
+                instructor = cols[5].get_text(strip=True) if len(cols) > 5 else ""
+                course_time = cols[6].get_text(strip=True) if len(cols) > 6 else ""
+                location = cols[11].get_text(strip=True) if len(cols) > 11 else ""
 
                 courses.append({
                     "course_name": course_name,
