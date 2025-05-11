@@ -6,6 +6,21 @@ from planner.course_scraper import fetch_courses
 
 load_dotenv()
 
+def read_file_contents(filename):
+    try:
+        # If running from a script
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+    except NameError:
+        # Fallback for Spyder, Jupyter, etc.
+        base_dir = os.getcwd()
+
+    file_path = os.path.join(base_dir, filename)
+
+    with open(file_path, "r") as f:
+        return f.read()
+
+
+
 def format_course_catalog(courses):
     catalog = "Here are the available courses:\n"
     for course in courses:
@@ -33,6 +48,16 @@ def start_chat_session():
 
     courses = fetch_courses()
     course_catalog = format_course_catalog(courses)
+    
+    constraints_text = read_file_contents("Schedule_Constraints.txt")
+    typical_schedule = read_file_contents("BSCS_Typical_Schedule.csv")
+
+    full_context = (
+        f"These are the student's constraints:\n{constraints_text}\n\n"
+        f"This is the student's typical BSCS schedule:\n{typical_schedule}\n\n"
+        f"{course_catalog}"
+    )
+
 
     print("Bot: Hello! I’m your Course Planner Assistant.")
     print(f"Bot: I have loaded {len(courses)} courses.\n")
@@ -43,7 +68,7 @@ def start_chat_session():
             if not user_input:
                 continue
 
-            enriched_input = f"{course_catalog}\n\nStudent asks: {user_input}"
+            enriched_input = f"{full_context}\n\nStudent asks: {user_input}"
             response = chat.send_message(enriched_input)
 
             print(f"Bot: {response.text.strip()}")
