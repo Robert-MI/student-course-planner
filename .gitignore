@@ -16,3 +16,8 @@ Thumbs.db
 
 # IDE files
 .idea/
+
+# Sysproject
+
+.sysproject/
+

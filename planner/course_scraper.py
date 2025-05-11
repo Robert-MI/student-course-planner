@@ -60,11 +60,3 @@ def fetch_courses(major_prefix=""):
                 })
 
     return courses
-
-# Optional: test/debug locally
-if __name__ == "__main__":
-    courses = fetch_courses(major_prefix="CS")  
-    print(f"Fetched {len(courses)} courses.\n")
-
-    for course in courses[:20]:  # Print first 10
-        print(f"{course['course_code']}: {course['course_title']} | Prerequisite: {course['has_prerequisite']}")

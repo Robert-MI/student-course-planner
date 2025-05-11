@@ -1,1 +1,51 @@
-semester,course,type,trackFall 1,Freshman Seminar 1,Foundation,Fall 1,Calculus 1,Math,Fall 1,Discrete Math,Math,Fall 1,Armenian Language & Literature 1,Foundation,Fall 1,Gen-Ed 1,Gen-Ed,Spring 1,Freshman Seminar 2,Foundation,Spring 1,Calculus 2,Math,Spring 1,Linear Algebra,Math,Spring 1,Armenian Language & Literature 2,Foundation,Spring 1,Gen-Ed 2,Gen-Ed,Fall 2,Intro to Computer Science,Core,Fall 2,Calculus 3,Math,Fall 2,Computer Organization,Core,Fall 2,Armenian History 1,Foundation,Fall 2,Gen-Ed 3,Gen-Ed,Spring 2,Intro to Object-Oriented Programming,Core,Spring 2,Real Analysis,Math,Spring 2,Probability,Math,Spring 2,Armenian History 2,Foundation,Spring 2,Gen-Ed 4,Gen-Ed,Fall 3,Data Structures,Core,Fall 3,Numerical Analysis,Math,Fall 3,Parallel and HPC,Track Elective,ACSFall 3,Math Modeling Applications,Track Elective,MMFall 3,Free Elective 1,Free Elective,Fall 3,Gen-Ed 5,Gen-Ed,Spring 3,Introduction to Algorithms,Core,Spring 3,Optimization,Math,Spring 3,ACS Track Elective 2,Track Elective,ACSSpring 3,MM Track Elective 2,Track Elective,MMSpring 3,Free Elective 2,Free Elective,Spring 3,Gen-Ed 6,Gen-Ed,Fall 4,Mechanics,Core,Fall 4,Databases,Core,Fall 4,Ordinary Differential Equations,Math,Fall 4,Statistics,Math,Fall 4,Free Elective 3,Free Elective,Fall 4,Gen-Ed 7,Gen-Ed,Spring 4,Theory of Communication Networks,Core,Spring 4,Partial Differential Equations,Math,Spring 4,Capstone,Capstone,Spring 4,Gen-Ed 8,Gen-Ed,Spring 4,Gen-Ed 9,Gen-Ed,
+semester,course,type,track,prerequisite
+Fall 1,Freshman Seminar 1,Foundation,, 
+Fall 1,Calculus 1,Math,, 
+Fall 1,Discrete Math,Math,, 
+Fall 1,Armenian Language & Literature 1,Foundation,, 
+Fall 1,Gen-Ed 1,Gen-Ed,, 
+
+Spring 1,Freshman Seminar 2,Foundation,, 
+Spring 1,Calculus 2,Math,,Calculus 1
+Spring 1,Linear Algebra,Math,, 
+Spring 1,Armenian Language & Literature 2,Foundation,, 
+Spring 1,Gen-Ed 2,Gen-Ed,, 
+
+Fall 2,Intro to Computer Science,Core,, 
+Fall 2,Calculus 3,Math,,Calculus 2
+Fall 2,Computer Organization,Core,,Calculus 3
+Fall 2,Armenian History 1,Foundation,, 
+Fall 2,Gen-Ed 3,Gen-Ed,, 
+
+Spring 2,Intro to Object-Oriented Programming,Core,,Intro to Computer Science
+Spring 2,Real Analysis,Math,,Calculus 2
+Spring 2,Probability,Math,,Calculus 3
+Spring 2,Armenian History 2,Foundation,, 
+Spring 2,Gen-Ed 4,Gen-Ed,, 
+
+Fall 3,Data Structures,Core,,Intro to Object-Oriented Programming
+Fall 3,Numerical Analysis,Math,,Linear Algebra
+Fall 3,Parallel and HPC,Track Elective,ACS,
+Fall 3,Math Modeling Applications,Track Elective,MM,
+Fall 3,Free Elective 1,Free Elective,,
+Fall 3,Gen-Ed 5,Gen-Ed,, 
+
+Spring 3,Introduction to Algorithms,Core,,Data Structures
+Spring 3,Optimization,Math,,Calculus 3
+Spring 3,ACS Track Elective 2,Track Elective,ACS,
+Spring 3,MM Track Elective 2,Track Elective,MM,
+Spring 3,Free Elective 2,Free Elective,,
+Spring 3,Gen-Ed 6,Gen-Ed,, 
+
+Fall 4,Mechanics,Core,, 
+Fall 4,Databases,Core,, 
+Fall 4,Ordinary Differential Equations,Math,,Calculus 3
+Fall 4,Statistics,Math,,Probability
+Fall 4,Free Elective 3,Free Elective,,
+Fall 4,Gen-Ed 7,Gen-Ed,, 
+
+Spring 4,Theory of Communication Networks,Core,, 
+Spring 4,Partial Differential Equations,Math,,Ordinary Differential Equations
+Spring 4,Capstone,Capstone,,
+Spring 4,Gen-Ed 8,Gen-Ed,, 
+Spring 4,Gen-Ed 9,Gen-Ed,, 
