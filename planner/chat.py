@@ -38,7 +38,7 @@ def start_chat_session():
     genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
     model = genai.GenerativeModel(
-        model_name="gemini-2.5-pro-exp-03-25",
+        model_name="gemini-2.5-flash-preview-05-20",
         safety_settings=safety_settings,
         generation_config=generation_config,
         system_instruction=system_instruction,
