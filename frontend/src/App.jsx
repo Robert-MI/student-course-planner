@@ -1,3 +1,4 @@
+import CourseList from "./components/CourseList";
 import { useEffect, useState } from "react";
 import ChatInput from "./components/ChatInput";
 import CourseList from "./components/CourseList";
