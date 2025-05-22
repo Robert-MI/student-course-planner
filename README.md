@@ -6,24 +6,19 @@ This project includes a Flask backend and a React frontend to interact with a Ge
 
 ### Backend
 
-1. Activate your Python virtual environment:
-   ```bash
-   source myenv/bin/activate
-   ````
-
-2. Install dependencies:
+1. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Create a `.env` file with your Gemini API key:
+2. Create a `.env` file with your Gemini API key:
 
    ```
    GEMINI_API_KEY=your_api_key_here
    ```
 
-4. Start the Flask backend server:
+3. Start the Flask backend server:
 
    ```bash
    python main.py
