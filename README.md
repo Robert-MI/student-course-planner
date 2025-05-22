@@ -9,7 +9,7 @@ This project includes a Flask backend and a React frontend to interact with a Ge
 1. Activate your Python virtual environment:
    ```bash
    source myenv/bin/activate
-````
+   ````
 
 2. Install dependencies:
 
@@ -28,6 +28,8 @@ This project includes a Flask backend and a React frontend to interact with a Ge
    ```bash
    python main.py
    ```
+
+   
 
 ### Frontend
 
@@ -51,8 +53,7 @@ This project includes a Flask backend and a React frontend to interact with a Ge
 
 4. Open your browser at [http://localhost:3000](http://localhost:3000)
 
----
 
-Your frontend will send chat requests to the Flask backend running on port 5050.
 
----
+The frontend will send chat requests to the Flask backend running on port 5050.
+
